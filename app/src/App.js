@@ -8,7 +8,7 @@ function App() {
   const [strikes, setStrikes] = useState(0);
 
   useEffect(() => {
-    if (balls > 3 || strikes > 4) {
+    if (balls === 4 || strikes === 3) {
       resetBallsAndStrikes();
     }
   }, [balls, strikes]);

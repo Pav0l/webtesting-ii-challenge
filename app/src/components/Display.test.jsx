@@ -40,4 +40,15 @@ describe('Display component', () => {
     rtl.fireEvent.click(dashboardWrap.getByText(/hit/i));
     expect(displayWrap.findByText(/0/i));
   });
+
+  it('click to increase strikes count above 3 resets it to 0', async () => {
+    const displayWrap = rtl.render(<Display strikes={3} balls={1} />);
+    const dashboardWrap = rtl.render(<Dashboard />);
+    expect(displayWrap.queryByText(/0/i)).toBeFalsy();
+    expect(displayWrap.getByText(/3/i));
+    rtl.fireEvent.click(dashboardWrap.getByText(/strike/i));
+    await displayWrap.findByText(/0/i);
+
+    expect(displayWrap.getByText(/0/i));
+  });
 });
