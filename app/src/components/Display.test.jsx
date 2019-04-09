@@ -4,7 +4,7 @@ import Display from './Display';
 
 afterEach(rtl.cleanup);
 
-describe('Display Component', () => {
+describe('Display component', () => {
   it('displays balls count', () => {
     const componentWrapper = rtl.render(<Display balls={0} strikes={0} />);
     expect(componentWrapper.getByText(/0/i));

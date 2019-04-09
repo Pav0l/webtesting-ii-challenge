@@ -4,7 +4,7 @@ import Dashboard from './Dashboard';
 
 afterEach(rtl.cleanup);
 
-describe('Dashboard Component', () => {
+describe('Dashboard component', () => {
   it('renders buttons', () => {
     const componentWrapper = rtl.render(<Dashboard />);
     expect(componentWrapper.getByText(/Strike/i));

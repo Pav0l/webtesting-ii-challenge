@@ -11,7 +11,7 @@ function App() {
     if (balls > 3 || strikes > 4) {
       resetBallsAndStrikes();
     }
-  }, [strikes, balls]);
+  }, [balls, strikes]);
 
   const resetBallsAndStrikes = () => {
     setBalls(0);
