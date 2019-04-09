@@ -6,10 +6,10 @@ afterEach(rtl.cleanup);
 
 describe('Dashboard component', () => {
   it('renders buttons', () => {
-    const componentWrapper = rtl.render(<Dashboard />);
-    expect(componentWrapper.getByText(/Strike/i));
-    expect(componentWrapper.getByText(/Ball/i));
-    expect(componentWrapper.getByText(/Foul/i));
-    expect(componentWrapper.getByText(/Hit/i));
+    const dashboardWrap = rtl.render(<Dashboard />);
+    expect(dashboardWrap.getByText(/Strike/i));
+    expect(dashboardWrap.getByText(/Ball/i));
+    expect(dashboardWrap.getByText(/Foul/i));
+    expect(dashboardWrap.getByText(/Hit/i));
   });
 });
