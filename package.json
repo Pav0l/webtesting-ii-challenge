@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "jest": "^24.7.1",
+    "react-testing-library": "^6.1.2"
+  }
+}
