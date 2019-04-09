@@ -3,8 +3,8 @@ import React from 'react';
 function Display({ balls, strikes }) {
   return (
     <div>
-      <div>Strikes count: {strikes}</div>
-      <div>Balls count: {balls}</div>
+      <div>Strikes: {strikes}</div>
+      <div>Balls: {balls}</div>
     </div>
   );
 }
